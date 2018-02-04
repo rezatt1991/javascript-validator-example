@@ -53,90 +53,35 @@
     $(document).ready(function () {
         $("#alink").on('click',function () {
             var tt = $("#inp").val();
-//            var regexp = /(^\w+@{1}\w+\.\w\w+$)/g;
-//            var regexp = /namagasht\.(com|ir)/;
             var regexp = /(0|\+98|0098)?9[123]\d{8}/;
-
             if(tt.match(regexp)) {
                 alert("Your Number is for iran");
             }else{
+                alert("warning");
+            }
+        })
 
+        ("#alink1").on('click',function () {
+            var tt = $("#inp1").val();
+            var regexp = /(^\w+@{1}\w+\.\w\w+$)/g;
+            if(tt.match(regexp)) {
+                alert("Your Number is for iran");
+            }else{
                 alert("warning");
             }
         })
     })
-
-
-//    $(document).ready(function () {
-//        var num = 1;
-//        $(".insert-p").click(function () {
-//            $(".box-input-r").show();
-//        })
-//        $(".save-r").click(function () {
-//            var new_name = $(".input-r").val();
-//            if(new_name){
-//                $("ul.listr").append("<li>" + num + " : " + new_name +" <span class='delete-p'>Delete</span></li>");
-//                $(".box-input-r").animate({opacity:'0'},2000,function () {
-//                    $("div#ff").animate({opacity:'1'},2000);
-//                })
-//            }else{
-//                $(".box-input-r").slideDown(6000);
-//                $(".dd").html("Please Enter Your Name");
-//            }
-//            num++;
-//        });
-//        $(document).on('click', '.delete-p', function() {
-//            $(this).parent().remove();
-//        });
-//    })
 </script>
+Please Enter Your Number Of iran :
 <input id="inp" type="text" />
 <a href="#" id="alink"> Click </a>
+<hr/>
+Please Enter Your Email :
+<input id="inp1" type="text" />
+<a href="#" id="alink1"> Click </a>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!--<div class="mainr" >-->
-    <!--<div class="boxr">-->
-        <!--<label>pesonal list</label>-->
-        <!--<ul class="listr">-->
-
-        <!--</ul>-->
-        <!--<hr>-->
-        <!--<a class="insert-p" href="#">Personal Insert </a>-->
-        <!--<div id="ff">-->
-            <!--نام کارمند ثبت شد-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<!--<div class="box-input-r">-->
-    <!--<input type="text" class="input-r">-->
-    <!--<span class="dd"></span>-->
-    <!--<a href="#" class="save-r">Save</a>-->
-<!--</div>-->
-
-
-<!--&lt;!&ndash;<div>&ndash;&gt;-->
-    <!--&lt;!&ndash;<ul>&ndash;&gt;-->
-        <!--&lt;!&ndash;<li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<span></span>&ndash;&gt;-->
-            <!--&lt;!&ndash;<span></span>&ndash;&gt;-->
-        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-        <!--&lt;!&ndash;<li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<b></b>&ndash;&gt;-->
-        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
 </body>
 </html>
