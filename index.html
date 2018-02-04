@@ -61,11 +61,11 @@
             }
         })
 
-        ("#alink1").on('click',function () {
-            var tt = $("#inp1").val();
-            var regexp = /(^\w+@{1}\w+\.\w\w+$)/g;
-            if(tt.match(regexp)) {
-                alert("Your Number is for iran");
+        $("#alink1").on('click',function () {
+            var tt1 = $("#inp1").val();
+            var regexp1 = /(^\w+@{1}\w+\.\w\w+$)/g;
+            if(tt1.match(regexp1)) {
+                alert("Your Email is Valid");
             }else{
                 alert("warning");
             }
