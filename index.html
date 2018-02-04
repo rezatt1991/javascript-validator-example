@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .btn{
+            background: red;
+
+        }
+
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="common.js"></script>
+    <link href="pure.css">
+    <style>
+        .mainr {
+            width: 400px;
+            padding-bottom:8px;
+            background: red;
+        }
+        label{
+
+            height: 30px;
+            font-size: 23px;
+            width: 100%;
+            padding: 10px;
+            border-bottom: 1px solid #000;
+
+        }
+        .box-input-r{
+            width: 500px;
+            height: 400px;
+            background: #c7bcbc;
+            top: 100px;
+            border-radius: 5px;
+            border: 1px solid #756b35;
+            margin: 0 auto;
+            display: none;
+
+        }
+        span.delete-p {
+            cursor: pointer;
+        }
+#ff{
+    opacity: 0;
+
+}
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#alink").on('click',function () {
+            var tt = $("#inp").val();
+//            var regexp = /(^\w+@{1}\w+\.\w\w+$)/g;
+//            var regexp = /namagasht\.(com|ir)/;
+            var regexp = /(0|\+98|0098)?9[123]\d{8}/;
+
+            if(tt.match(regexp)) {
+                alert("Your Number is for iran");
+            }else{
+
+                alert("warning");
+            }
+        })
+    })
+
+
+//    $(document).ready(function () {
+//        var num = 1;
+//        $(".insert-p").click(function () {
+//            $(".box-input-r").show();
+//        })
+//        $(".save-r").click(function () {
+//            var new_name = $(".input-r").val();
+//            if(new_name){
+//                $("ul.listr").append("<li>" + num + " : " + new_name +" <span class='delete-p'>Delete</span></li>");
+//                $(".box-input-r").animate({opacity:'0'},2000,function () {
+//                    $("div#ff").animate({opacity:'1'},2000);
+//                })
+//            }else{
+//                $(".box-input-r").slideDown(6000);
+//                $(".dd").html("Please Enter Your Name");
+//            }
+//            num++;
+//        });
+//        $(document).on('click', '.delete-p', function() {
+//            $(this).parent().remove();
+//        });
+//    })
+</script>
+<input id="inp" type="text" />
+<a href="#" id="alink"> Click </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="mainr" >-->
+    <!--<div class="boxr">-->
+        <!--<label>pesonal list</label>-->
+        <!--<ul class="listr">-->
+
+        <!--</ul>-->
+        <!--<hr>-->
+        <!--<a class="insert-p" href="#">Personal Insert </a>-->
+        <!--<div id="ff">-->
+            <!--نام کارمند ثبت شد-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="box-input-r">-->
+    <!--<input type="text" class="input-r">-->
+    <!--<span class="dd"></span>-->
+    <!--<a href="#" class="save-r">Save</a>-->
+<!--</div>-->
+
+
+<!--&lt;!&ndash;<div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<ul>&ndash;&gt;-->
+        <!--&lt;!&ndash;<li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span></span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span></span>&ndash;&gt;-->
+        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<b></b>&ndash;&gt;-->
+        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+</body>
+</html>
